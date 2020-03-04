@@ -1,4 +1,5 @@
 import React from 'react';
+import Wood from '../components/wood';
 
 const Footer = () => {
     return (
@@ -11,7 +12,7 @@ const Footer = () => {
             info@mysite.com</p>
             <p>Allison Knight</p>
             <p>Telephone</p>
-            <img src = "../images/wood.png"></img>
+            <Wood/>
           </picture>
         </footer>
     )

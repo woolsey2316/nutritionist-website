@@ -2,9 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Dish from "../components/Dish"
 import Footer from "../components/footer"
+import Person from "../components/Person"
+import Fruit from "../components/Fruit"
+import LandingPage from "../components/landingpage"
 
 const IndexPage = () => (
   <Layout>
@@ -14,10 +17,10 @@ const IndexPage = () => (
         <q>let food be thy medicine and medicine be thy food</q>
         <button type="button">Book a session</button>
       </div>
-      <img src="landingpage.png"></img>
+      <LandingPage/>
     </picture>
     <picture>
-      <img src="person.png"></img>
+      <Person/>
     </picture>
     <h2>Meet Alisson</h2>
     <p>I'm a paragraph. Click here to add your own text and edit me. 
@@ -27,11 +30,11 @@ const IndexPage = () => (
     <button>Blog</button>
     <h2>Recipes & Tips</h2>
     <picture>
-      <img src ="../images/dish.png"></img>
+      <Dish/>
     </picture>
     <h2>Family and Group Nutrition Counselling</h2>
     <picture>
-      <img src="../images/fruit.png"></img>
+      <Fruit/>
     </picture>
 
     <Footer/>

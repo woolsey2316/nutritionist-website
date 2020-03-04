@@ -1,13 +1,14 @@
 import React from 'react';
 import Footer from '../components/footer'
+import Wood from '../components/wood'
 
 const Plans = () => {
     return (
+      <div>
         <picture>
-          <img src = "../images/wood.png"></img>
-
+          <Wood/>
         </picture>
         <Footer/>
-
+      </div>
     )
 }

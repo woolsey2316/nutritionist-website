@@ -1,9 +1,11 @@
 import React from 'react';
+import Wood from '../components/Wood'
 
 const Blog = () => {
     return (
         <picture>
-          <img src = "../images/wood.png"></img></picture>
+          <Wood/>
+        </picture>
     )
 
 }

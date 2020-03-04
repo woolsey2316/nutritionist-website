@@ -1,13 +1,15 @@
 import React from 'react';
 import Footer from '../components/footer';
+import Person2 from '../components/Person2';
 
 const AboutAllison = () => {
     return (
         <div>
-          <header src="../images/wood.png">
+          <header>
+            <Person2/>
             <h1>About Allison</h1>
           </header>
-          <img src="../images/person2.png"></img>
+          <Person2/>
           <h3>My Story</h3>
           <p>I'm a paragraph. Click here to add your own text and edit me. 
           It’s easy. Just click “Edit Text” or double click me to add your 

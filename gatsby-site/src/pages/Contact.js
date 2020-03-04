@@ -1,10 +1,12 @@
 import React from 'react';
+import contactForm from './contactForm';
+import Wood from './components/Wood';
 
 const Contact = () => {
     return (
         <div>
           <picture>
-            <img src = "..images/wood.png"></img>
+            <Wood/>
           </picture>
           <p>If you need more information, have questions, or would like to 
           offer a suggestion, please be in touch. 
@@ -18,8 +20,8 @@ const Contact = () => {
           500 Terry Francois Street
           
           San Francisco, CA 94158</p>
-          <div clasName={StyleMedia.conatctForm}>
-            <form></form>
+          <div>
+            <contactForm/>
             <button type="button"></button>
           </div>
         </div>

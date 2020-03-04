@@ -1,14 +1,14 @@
 import React from 'react';
 import Consulting from '../components/consulting'
-import Footer from '../components/footer'
+import Footer from '../components/footer.js'
 
 const Services = () => {
     return (
       <div>
-        <picture>
-          <source src="../images/wood.png"/>
+        <header>
+          <Wood/>
           <h3>Services</h3>
-        </picture>
+        </header>
         <Consulting time="1hr" cost="$100" heading ="Personal Nutrition Counselling"/>
         <Consulting time="1.5hr" cost="$100" heading ="Family Nutrition Counselling"/>
         <Consulting time="1hr" cost="$70" heading ="Sustainable Weight Management"/>
