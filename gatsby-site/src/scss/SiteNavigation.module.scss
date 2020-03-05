@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Lato&display=swap');
+
+$box-colour: #b0c544;
+$font-stack: Helvetica, sans-serif;
+$primary-title: 'Crimson Text', serif;
+$sub-heading: 'Lato', sans-serif;
+$right-offset: 392px;
+
+nav {
+  display: flex;  
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap:wrap;
+  margin-right: $right-offset;
+}
+
+.container {
+  background-color: $box-colour;
+  text-align: center;
+  height: 104px;
+  width: 218px;
+  min-width: 218px;
+  align-self: flex-start;
+
+
+}
+
+h1 {  
+  font-family: $primary-title;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  padding: 15% 10% 0% 10%;
+  font-size: 22px;
+  line-height: 1;
+
+}
+
+p {
+  font-family: $sub-heading;
+  font-size: 13px;
+  line-height: 0;
+
+}

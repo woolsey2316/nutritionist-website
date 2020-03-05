@@ -13,30 +13,20 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-
-export default () => {
+const Person2 = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "person.png" }) {
+      placeholderImage: file(relativePath: { eq: "person2.png" }) {
         childImageSharp {
-          # Specify a fixed image and fragment.
-          # The default width is 400 pixels
-          fixed {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
     }
   `)
-  return (
-    <div>
-      <Img
-        fixed={data.file.childImageSharp.fixed}
-        alt="Gatsby Docs are awesome"
-        height= "477px"
-        width="370px"
-        style={{marginRight:"50%"}}
-      />
-    </div>
-  )
+
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
+
+export default Person2

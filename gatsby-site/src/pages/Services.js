@@ -1,13 +1,19 @@
 import React from 'react';
 import Consulting from '../components/consulting'
 import Footer from '../components/footer.js'
+import Wood from '../components/Wood';
+import SiteNavigation from '../components/SiteNavigation'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 const Services = () => {
     return (
       <div>
+        <SEO title="services" />
+        <SiteNavigation/>
         <header>
           <Wood/>
-          <h3>Services</h3>
+          <h1>Services</h1>
         </header>
         <Consulting time="1hr" cost="$100" heading ="Personal Nutrition Counselling"/>
         <Consulting time="1.5hr" cost="$100" heading ="Family Nutrition Counselling"/>
@@ -17,7 +23,6 @@ const Services = () => {
         <Consulting time="1hr" cost="$50" heading ="Improving Lifestyle Workshop"/>
         <Footer/>
       </div>
-
     )
 }
 

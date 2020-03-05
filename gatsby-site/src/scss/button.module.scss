@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Lato&display=swap');
+
+$primary-title: 'Crimson Text', serif;  
+
+.button {
+    background-color: #adc743;
+    font-family: $primary-title;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-bottom: 30%;
+    cursor: pointer;
+    transition: 0.5s all;
+    width: 165px;
+    height: 46px;
+  
+  }
+  
+  .button:hover {
+    background-color: #899c40;
+  }
+
+  .largeButton {
+    background-color: #adc743;
+    font-family: $primary-title;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s all;
+    width: 146px;
+    height:146px;
+    background-color: rgba(172, 162, 152, 1);
+    border: solid rgba(172, 162, 152, 1) 1px;
+    cursor: pointer;
+  
+  }
+  
+  .largeButton:hover {
+    background-color: #706962;
+  }

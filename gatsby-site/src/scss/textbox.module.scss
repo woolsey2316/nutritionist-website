@@ -1,0 +1,41 @@
+.title {
+    line-height: 2;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0% 10%;
+    
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.alisonTextBox {
+    @extend .textBox;
+    background-color: #e8ebee;
+}
+
+.blogTextBox {
+    @extend .textBox;
+    background-color: #adc743;
+    width: 470px;
+    height: 258px;
+}
+
+.description {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+    word-break: normal;
+    white-space: normal;
+    margin: 0% 10%;
+    
+}
+
+.blogDescription {
+    @extend .description;
+    
+}

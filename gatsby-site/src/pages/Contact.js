@@ -1,11 +1,14 @@
 import React from 'react';
-import contactForm from './contactForm';
-import Wood from './components/Wood';
+import contactForm from '../components/contactForm';
+import Wood from '../components/Wood';
+import SiteNavigation from '../components/SiteNavigation'
 
 const Contact = () => {
     return (
         <div>
+        <SiteNavigation/>
           <picture>
+          <h1>Contact</h1>
             <Wood/>
           </picture>
           <p>If you need more information, have questions, or would like to 
@@ -27,3 +30,5 @@ const Contact = () => {
         </div>
     )
 }
+
+export default Contact;

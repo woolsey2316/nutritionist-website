@@ -1,10 +1,12 @@
 import React from 'react';
 import Footer from '../components/footer';
 import Person2 from '../components/Person2';
+import SiteNavigation from '../components/SiteNavigation'
 
 const AboutAllison = () => {
     return (
         <div>
+        <SiteNavigation/>
           <header>
             <Person2/>
             <h1>About Allison</h1>
@@ -26,3 +28,5 @@ const AboutAllison = () => {
         </div>
     )
 }
+
+export default AboutAllison;

@@ -1,32 +1,48 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
 
-/*
- * This component is built using `gatsby-image` to automatically serve optimized
- * images with lazy loading and reduced file sizes. The image is loaded using a
- * `useStaticQuery`, which allows us to load the image from directly within this
- * component, rather than having to pass the image data down from pages.
- *
- * For more information, see the docs:
- * - `gatsby-image`: https://gatsby.dev/gatsby-image
- * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
- */
+import BackgroundImage from 'gatsby-background-image'
+import Style from '../scss/LandingPage.module.scss'
+import buttonStyle from '../scss/button.module.scss'
 
-const LandingPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "landingpage.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+const LandingPage = ({ className }) => (
+  <StaticQuery
+    query={graphql`
+      query {
+        desktop: file(relativePath: { eq: "landingpage.png" }) {
+          childImageSharp {
+            fluid(quality: 90, maxWidth: 1920) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
           }
         }
       }
-    }
-  `)
-
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-}
+    `}
+    render={data => {
+      // Set ImageData.
+      const imageData = data.desktop.childImageSharp.fluid
+      return (
+        <BackgroundImage
+          Tag="section"
+          className={Style.mainImage}
+          fluid={imageData}
+          style={{
+            // Defaults are overwrite-able by setting one or each of the following:
+            backgroundSize: 'cover',
+            height: '100vh',
+            width: '100vw',
+            backgroundRepeat: 'no-repeat',
+          }}
+        >
+        <div className={Style.quoteBox}>
+          <q>let food be thy medicine and medicine be thy food</q>
+          <div width="100%"></div>
+          <button className={buttonStyle.button} type="button">Book a Session</button>
+        </div>
+        </BackgroundImage>
+      )
+    }}
+  />
+)
 
 export default LandingPage
