@@ -35,7 +35,6 @@ export default () => {
         alt="Gatsby Docs are awesome"
         height= "477px"
         width="370px"
-        style={{marginRight:"50%"}}
       />
     </div>
   )

@@ -1,42 +1,43 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
+import BackgroundImage from 'gatsby-background-image'
+import Style from '../scss/footer.module.scss'
+
+const Header = ({ props }) => (
+  <StaticQuery
+    query={graphql`
+      query {
+        desktop: file(relativePath: { eq: "wood.png" }) {
+          childImageSharp {
+            fluid(quality: 90, maxWidth: 1920) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    `}
+    render={data => {
+      // Set ImageData.
+      const imageData = data.desktop.childImageSharp.fluid
+      return (
+        <BackgroundImage
+          Tag="section"
+          className={Style.mainImage}
+          fluid={imageData}
           style={{
-            color: `white`,
-            textDecoration: `none`,
+            // Defaults are overwrite-able by setting one or each of the following:
+            backgroundSize: 'cover',
+            height: '100vh',
+            width: '100vw',
+            backgroundRepeat: 'no-repeat',
           }}
         >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+        <h1>{props.title}</h1>
+        </BackgroundImage>
+      )
+    }}
+  />
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

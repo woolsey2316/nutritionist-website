@@ -1,5 +1,5 @@
 import React from 'react';
-import Wood from '../components/Wood'
+import Header from '../components/Header'
 import SiteNavigation from '../components/SiteNavigation'
 
 const Blog = () => {
@@ -7,8 +7,7 @@ const Blog = () => {
       <div>
         <SiteNavigation/>
         <picture>
-          <h1>Wood</h1>
-          <Wood/>
+          <Header title="Blog"/>
         </picture>
       </div>
     )

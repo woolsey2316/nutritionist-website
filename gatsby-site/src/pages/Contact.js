@@ -1,6 +1,6 @@
 import React from 'react';
 import contactForm from '../components/contactForm';
-import Wood from '../components/Wood';
+import Header from '../components/Header';
 import SiteNavigation from '../components/SiteNavigation'
 
 const Contact = () => {
@@ -8,8 +8,7 @@ const Contact = () => {
         <div>
         <SiteNavigation/>
           <picture>
-          <h1>Contact</h1>
-            <Wood/>
+            <Header title="Contact"/>
           </picture>
           <p>If you need more information, have questions, or would like to 
           offer a suggestion, please be in touch. 

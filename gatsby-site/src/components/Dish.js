@@ -21,7 +21,7 @@ export default () => {
         childImageSharp {
           # Specify a fixed image and fragment.
           # The default width is 400 pixels
-          fixed {
+          fixed(width: 600) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -33,8 +33,7 @@ export default () => {
       <Img
         fixed={data.file.childImageSharp.fixed}
         alt="Salad Dish"
-        height= "477px"
-        width="370px"
+        style={{marginRight:'600px',float: 'right'}}
       />
     </div>
   )

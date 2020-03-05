@@ -4,7 +4,7 @@ $box-colour: #b0c544;
 $font-stack: Helvetica, sans-serif;
 $primary-title: 'Crimson Text', serif;
 $sub-heading: 'Lato', sans-serif;
-$right-offset: 392px;
+$right-offset: 333px;
 
 nav {
   display: flex;  
@@ -22,14 +22,13 @@ nav {
   min-width: 218px;
   align-self: flex-start;
 
-
 }
 
 h1 {  
   font-family: $primary-title;
   font-weight: 300;
   color: rgb(255, 255, 255);
-  padding: 15% 10% 0% 10%;
+  padding: 5% 10% 0% 10%;
   font-size: 22px;
   line-height: 1;
 

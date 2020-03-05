@@ -11,7 +11,7 @@ const LandingPage = ({ className }) => (
       query {
         desktop: file(relativePath: { eq: "landingpage.png" }) {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 1920) {
+            fluid(quality: 90, maxWidth: 4120) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

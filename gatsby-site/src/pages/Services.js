@@ -1,7 +1,7 @@
 import React from 'react';
 import Consulting from '../components/consulting'
 import Footer from '../components/footer.js'
-import Wood from '../components/Wood';
+import Header from '../components/Header';
 import SiteNavigation from '../components/SiteNavigation'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -11,10 +11,7 @@ const Services = () => {
       <div>
         <SEO title="services" />
         <SiteNavigation/>
-        <header>
-          <Wood/>
-          <h1>Services</h1>
-        </header>
+          <Header title="Services"/>
         <Consulting time="1hr" cost="$100" heading ="Personal Nutrition Counselling"/>
         <Consulting time="1.5hr" cost="$100" heading ="Family Nutrition Counselling"/>
         <Consulting time="1hr" cost="$70" heading ="Sustainable Weight Management"/>

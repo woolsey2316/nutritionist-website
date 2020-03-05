@@ -14,10 +14,11 @@ const SiteNavigation = () => (
       activeStyle={{ color: "#a8b26a" }}
       style={{
         fontSize:"15px",
-        padding:"1%",
+        padding:"5px",
         fontStyle:"normal",
         textDecoration: 'none',
-        width:"100px"}}
+        width:"100px",
+        textAlign: 'center'}}
       
     >
       Home
@@ -27,10 +28,11 @@ const SiteNavigation = () => (
       activeStyle={{ color: "#a8b26a" }}
       style={{
         fontSize:"15px",
-        padding:"1%",
+        padding:"5px",
         fontStyle:"normal",
         textDecoration: 'none',
-        width:"100px"}}
+        width:"100px",
+        textAlign: 'center'}}
     >
       About Allison
     </Link>
@@ -39,10 +41,11 @@ const SiteNavigation = () => (
       activeStyle={{ color: "#a8b26a" }}
       style={{
         fontSize:"15px",
-        padding:"1%",
+        padding:"5px",
         fontStyle:"normal",
         textDecoration: 'none',
-        width:"100px"}}
+        width:"100px",
+        textAlign: 'center'}}
     >
       Blog
     </Link>
@@ -51,10 +54,11 @@ const SiteNavigation = () => (
       activeStyle={{ color: "#a8b26a" }}
       style={{
         fontSize:"15px",
-        padding:"1%",
+        padding:"5px",
         fontStyle:"normal",
         textDecoration: 'none',
-        width:"100px"}}
+        width:"100px",
+        textAlign: 'center'}}
     >
       Contact
     </Link>
@@ -63,10 +67,11 @@ const SiteNavigation = () => (
       activeStyle={{ color: "#a8b26a" }}
       style={{
         fontSize:"15px",
-        padding:"1%",
+        padding:"5px",
         fontStyle:"normal",
         textDecoration: 'none',
-        width:"100px"}}
+        width:"100px",
+        textAlign: 'center'}}
     >
       Plans
     </Link>
@@ -75,10 +80,11 @@ const SiteNavigation = () => (
       activeStyle={{ color: "#a8b26a" }}
       style={{
         fontSize:"15px",
-        padding:"1%",
+        padding:"5px",
         fontStyle:"normal",
         textDecoration: 'none',
-        width:"100px"}}
+        width:"100px",
+        textAlign: 'center'}}
     >
       Services
     </Link>

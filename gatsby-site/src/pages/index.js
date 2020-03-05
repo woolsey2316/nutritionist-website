@@ -10,6 +10,7 @@ import LandingPage from "../components/landingpage"
 import SiteNavigation from "../components/SiteNavigation"
 import AlisonTextBox from "../components/AlisonTextBox"
 import BlogTextBox from "../components/BlogTextBox"
+import ServicesTextBox from "../components/BlogTextBox"
 import style from "../scss/person.module.scss"
 import buttonStyle from "../scss/button.module.scss"
 
@@ -26,22 +27,29 @@ const IndexPage = () => (
         <AlisonTextBox title="Meet Alison"/>
       </div>
       <div className={style.break}/>
-      <div style={{display:'flex',margin:'372px',width:'100vw',marginLeft:'357px'}}>
+      <div style={{display: 'flex',
+        width: '616px',
+        marginRight: '370px',
+        float: 'right'}}>
         <button className={buttonStyle.largeButton}>Blog</button>
         <BlogTextBox title="Recipes & Tips"/>
       </div>
-    </div>
-    
     <picture>
       <Dish/>
     </picture>
-    <h2>Family and Group Nutrition Counselling</h2>
+    <div style={{    
+      display: 'flex',
+      /* width: 100vw; */
+      marginRight: '240px',
+      float: 'right'}}>
+        <button className={buttonStyle.largeButton}>Services</button>
+        <ServicesTextBox title="Family & Group Nutrition Counselling"/>
+      </div>
     <picture>
       <Fruit/>
     </picture>
-
+    </div>
     <Footer/>
-    <Link to="/page-2/">Go to page 2</Link>
   </div>
 )
 

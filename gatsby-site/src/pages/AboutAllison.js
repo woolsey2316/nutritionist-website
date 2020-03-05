@@ -7,7 +7,7 @@ const AboutAllison = () => {
     return (
         <div>
         <SiteNavigation/>
-          <header>
+          <header title="About Alison">
             <Person2/>
             <h1>About Allison</h1>
           </header>

@@ -1,21 +1,18 @@
-import React from 'react';
-import Wood from '../components/wood';
-
-const Footer = () => {
-    return (
-        <footer>
-          <picture>
-            <p>500 Terry Francois Street
-
-            San Francisco, CA 94158
-          
-            info@mysite.com</p>
-            <p>Allison Knight</p>
-            <p>Telephone</p>
-            <Wood/>
-          </picture>
-        </footer>
-    )
+.description {
+  line-height: 1.5;
+  vertical-align: middle;
+  word-break: normal;
+  white-space: normal;
+  margin: 0% 10%;
+  flex-basis:1;
+  
 }
 
-export default Footer
+.mainImage {
+  height: 100%;
+}
+
+.line {
+  border-left: 1px solid white;
+  height: 180px;
+}
