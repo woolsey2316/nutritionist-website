@@ -30,21 +30,25 @@ const Footer = ({ className }) => (
             height: '298px',
             width: '100%',
             backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'top right',
             display: 'flex',
             justifyContent: 'center',
             alignContent: 'center',
             alignItems: 'center'
           }}
         >
-        <p className={Style.description}>500 Terry Francois Street
-
-        San Francisco, CA 94158
-      
-        info@mysite.com</p>
+        <div className={Style.flexItemOne}>
+          <p className={Style.description}><span>500 Terry Francois Street</span></p>
+          <p className={Style.description}><span>San Francisco, CA 94158</span></p>
+          <p className={Style.description}><span>info@mysite.com</span></p>
+        </div>
         <div className={Style.line}/>
-        <p className={Style.description}>Allison Knight</p>
+        <div className={Style.flexItemTwo}>
+          <p className={Style.title}>ALISON KNIGHT</p>
+          <p className={Style.description}>Nutritionist</p>
+        </div>
         <div className={Style.line}/>
-        <p className={Style.description}>Telephone</p>
+        <p className={Style.description}>Tel: 123-456-7890</p>
         </BackgroundImage>
       )
     }}
