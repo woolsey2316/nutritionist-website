@@ -1,12 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 import Style from '../scss/SiteNavigation.module.scss'
+import SocialMediaQuilt from '../components/SocialMediaQuilt'
 
 const SiteNavigation = () => (
   <nav>
     <div className={Style.container}>
-      <h1>ALISON KNIGHT</h1>
-      <p>Nutritionist</p>
+      <h1 className={Style.websiteTitle}>ALISON KNIGHT</h1>
+      <p className={Style.subtext}>Nutritionist</p>
     </div>
     <Link
       to="/"
@@ -88,6 +89,7 @@ const SiteNavigation = () => (
     >
       Services
     </Link>
+    <SocialMediaQuilt styleType="black"/>
   </nav>
 )
 

@@ -1,0 +1,18 @@
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li {
+    margin: 5px;
+}
+
+
+ul li a:visited {
+    color: black;
+}
+
+//avoid colour change when visited etc..
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }

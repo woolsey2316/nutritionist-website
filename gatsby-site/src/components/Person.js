@@ -32,7 +32,7 @@ export default () => {
     <div>
       <Img
         fixed={data.file.childImageSharp.fixed}
-        alt="Gatsby Docs are awesome"
+        alt="Alison portait"
         height= "477px"
         width="370px"
       />

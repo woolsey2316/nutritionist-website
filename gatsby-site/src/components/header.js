@@ -2,9 +2,9 @@ import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 
 import BackgroundImage from 'gatsby-background-image'
-import Style from '../scss/footer.module.scss'
+import Style from '../scss/header.module.scss'
 
-const Header = ({ props }) => (
+const Header = ({ title }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -28,12 +28,15 @@ const Header = ({ props }) => (
           style={{
             // Defaults are overwrite-able by setting one or each of the following:
             backgroundSize: 'cover',
-            height: '100vh',
+            height: '200px',
             width: '100vw',
             backgroundRepeat: 'no-repeat',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center'
           }}
         >
-        <h1>{props.title}</h1>
+        <h1 className={Style.title}>{title}</h1>
         </BackgroundImage>
       )
     }}

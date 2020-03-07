@@ -1,8 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Lato&display=swap');
+
+$primary-title: 'Crimson Text', serif;
+$sub-heading: 'Lato', sans-serif;
+
 .title {
-    line-height: 2;
+    line-height: 1;
     display: inline-block;
     vertical-align: middle;
     margin: 0% 10%;
+    font-family: $primary-title;
+    font-size: 30px;
+    margin-bottom: 10px;
+    
+}
+
+.blogTitle {
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    font-weight: 100;
+    margin: 0% 10%;
+    font-family: $primary-title;
+    font-size: 30px;
+    margin-bottom: 10px;
     
 }
 
@@ -10,7 +31,32 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: $sub-heading;
     
+}
+
+.specialties {
+    @extend .textBox;
+    background-color: #aca298;
+    text-align: center;
+    width: 344px;
+    height: 379px;
+    float: right;
+}
+
+.specialties p {
+   color:white;
+   line-height: 0.4;
+   
+}
+
+.specialties h4 {
+    font-style: italic;
+    color: white;
+    font-family: $primary-title;
+    font-size: 25px;
+    font-weight: 100;
+
 }
 
 .alisonTextBox {
@@ -19,15 +65,25 @@
     height: 425px;
 }
 
+.storyTextBox {
+    @extend .textBox;
+    background-color: #e8ebee;
+    width: 530px;
+    height: 514px;
+
+}
+
 .blogTextBox {
     @extend .textBox;
-    background-color: #adc743;
+    background-color: #6a9e45;
     width: 470px;
     height: 258px;
 }
 
 .description {
     line-height: 1.5;
+    font-family: $sub-heading;
+    font-size: 16px;
     display: inline-block;
     vertical-align: middle;
     word-break: normal;
@@ -36,7 +92,21 @@
     
 }
 
+.alisonDescription {
+    @extend .description;
+    color: black;
+}
+
 .blogDescription {
     @extend .description;
-    
+    color: white;
+    font-weight: 200;
+}
+
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    margin-right: 281px;
+
 }

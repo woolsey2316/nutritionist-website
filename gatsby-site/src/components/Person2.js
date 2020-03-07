@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import style from "../scss/textbox.module.scss";
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -13,20 +14,39 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Person2 = () => {
+
+export default () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "person2.png" }) {
+      file(relativePath: { eq: "person2.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+          # Specify a fixed image and fragment.
+          # The default width is 400 pixels
+          fixed {
+            ...GatsbyImageSharpFixed
           }
         }
       }
     }
   `)
-
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <div>
+      <Img
+        fixed={data.file.childImageSharp.fixed}
+        alt="Gatsby Docs are awesome"
+        height= "332px"
+        width="450px"
+        float="right"
+        style={{display:'block'}}
+      />
+      <div className={style.specialties}>
+        <h4>Specialties</h4>
+        <p>Digestive Wellness</p>
+        <p>Food allergies and Intolerance</p>
+        <p>Healthy cooking / meal planning</p>
+        <p>Diet and Detoxing</p>
+        <p>Elimination diets</p>
+      </div>
+    </div>
+  )
 }
-
-export default Person2

@@ -3,6 +3,7 @@ import { graphql, StaticQuery } from 'gatsby'
 
 import BackgroundImage from 'gatsby-background-image'
 import Style from '../scss/footer.module.scss'
+import SocialMediaQuilt from '../components/SocialMediaQuilt'
 
 
 const Footer = ({ className }) => (
@@ -34,7 +35,8 @@ const Footer = ({ className }) => (
             display: 'flex',
             justifyContent: 'center',
             alignContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+            flexWrap:'wrap'
           }}
         >
         <div className={Style.flexItemOne}>
@@ -49,6 +51,8 @@ const Footer = ({ className }) => (
         </div>
         <div className={Style.line}/>
         <p className={Style.description}>Tel: 123-456-7890</p>
+        <div className={Style.break}/>
+        <SocialMediaQuilt colour="white"/>
         </BackgroundImage>
       )
     }}
