@@ -1,6 +1,6 @@
 import React from 'react';
 
-const consulting = (props) => {
+const Consulting = (props) => {
     return (
         <div>
           <img src={props.imageURL}></img>
@@ -12,4 +12,4 @@ const consulting = (props) => {
     )
 }
 
-export default consulting;
+export default Consulting;

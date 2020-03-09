@@ -1,7 +1,8 @@
 import React from 'react';
 import axios from 'axios';
+import Style from '../scss/contactForm.module.scss';
 
-class contactForm extends React.Component {
+class ContactForm extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -17,34 +18,36 @@ class contactForm extends React.Component {
   
   render() {
    return(
-     <div className="App">
+     <div className={Style.formContainer}>
      <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-      <div className="form-group">
-          <label htmlFor="name">Name</label>
+      <div className={Style.formGroup}>
+          <label className={Style.label} htmlFor="name">Name</label>
           <input 
             type="text" 
-            className="form-control" 
+            className={Style.input} 
             value={this.state.name}
             onChange={this.onNameChange.bind(this)} />
       </div>
-      <div className="form-group">
-          <label htmlFor="exampleInputEmail1">Email address</label>
+      <div className={Style.formGroup}>
+          <label className={Style.label} htmlFor="exampleInputEmail1">Email address</label>
           <input 
             type="email" 
-            className="form-control" 
+            className={Style.input} 
             aria-describedby="emailHelp" 
             value={this.state.email} 
             onChange={this.onEmailChange.bind(this)} />
       </div>
-      <div className="form-group">
-          <label htmlFor="message">Message</label>
+      <div className={Style.formGroup}>
+          <label className={Style.label} htmlFor="message">Message</label>
           <textarea 
-            className="form-control" 
-            rows="5" 
+            className={Style.input} 
+            rows="7" 
             value={this.state.message} 
-            onChange={this.onMessageChange.bind(this)} />
+            onChange={this.onMessageChange.bind(this)}
+            resize="none"/>
       </div>
-      <button type="submit" className="btn btn-primary">Submit</button>
+      <button type="submit" className={Style.button}>Submit</button>
+      <p className={Style.subtext}>Thanks for submitting!</p>
       </form>
       </div>
    );
@@ -79,4 +82,4 @@ class contactForm extends React.Component {
       }
   }
   
-  export default contactForm;
+  export default ContactForm;

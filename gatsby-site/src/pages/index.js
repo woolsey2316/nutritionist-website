@@ -27,7 +27,8 @@ const IndexPage = () => (
         <AlisonTextBox title="Meet Alison"/>
       </div>
       <div className={style.break}/>
-      <div style={{display: 'flex',
+      <div style={{
+        display: 'flex',
         width: '616px',
         marginRight: '370px',
         float: 'right'}}>

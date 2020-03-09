@@ -32,6 +32,7 @@ $sub-heading: 'Lato', sans-serif;
     flex-direction: column;
     justify-content: center;
     font-family: $sub-heading;
+    color: #555353;
     
 }
 
@@ -63,6 +64,14 @@ $sub-heading: 'Lato', sans-serif;
     @extend .textBox;
     background-color: #e8ebee;
     height: 425px;
+}
+
+.contactTextBox {
+    @extend .textBox;
+    background-color: #e8ebee;
+    height: 379px;
+    width: 634px;
+
 }
 
 .storyTextBox {
