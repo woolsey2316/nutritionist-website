@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Lato&display=swap');
+
+$sub-heading: 'Lato', sans-serif;
+
+.nav {
+    font-family: $sub-heading;
+    font-size: 14px;
+    padding: 5px;
+    font-style: normal;
+    text-decoration: none;
+    width:100px;
+    text-align: center;
+}

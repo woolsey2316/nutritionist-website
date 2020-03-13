@@ -3,7 +3,7 @@ import ContactForm from '../components/ContactForm';
 import Header from '../components/Header';
 import SiteNavigation from '../components/SiteNavigation'
 import Style from '../scss/textbox.module.scss';
-import MapContainer from '../components/MapContainer';
+import GoogleApiWrapper from '../components/MapContainer';
 
 const Contact = () =>  {
       return (
@@ -29,7 +29,7 @@ const Contact = () =>  {
             <p className={Style.alisonDescription}>San Francisco, CA 94158</p>
             </div>
           <div>
-          <MapContainer google="Alison" />
+          <GoogleApiWrapper/>
           <button type="button"></button>
           </div>
         </div>

@@ -1,21 +1,14 @@
 import React from 'react';
 import { Link } from "gatsby";
+import Style from '../scss/navlink.module.scss'
 
 const NavLink = (props) => {
     return (
         <Link
-        to={ props.name=="Home" ? "/" : props.name.replace(/ /g, '') + "/"}
-        activeClassName="active"
-        activeStyle={{ color: "#a8b26a" }}
-        style={{
-            fontSize:"15px",
-            padding:"5px",
-            fontStyle:"normal",
-            textDecoration: 'none',
-            width:"100px",
-            textAlign: 'center',
-            fontFamily:"Crimson Text"}}
-        
+          to={ props.name=="Home" ? "/" : props.name.replace(/ /g, '') + "/"}
+          className={Style.nav}
+          activeClassName="active"
+          activeStyle={{ color: "#a8b26a" }}
         >{props.name}
         </Link>
     )

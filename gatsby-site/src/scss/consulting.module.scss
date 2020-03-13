@@ -1,15 +1,55 @@
-import React from 'react';
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Lato&display=swap');
 
-const consulting = (props) => {
-    return (
-        <div>
-          <img src={props.imageURL}></img>
-          <h2>{props.heading}</h2>
-          <p>{props.time}</p>
-          <p>{props.zcost}</p>
-          <button type="button">Book Now</button>
-        </div>
-    )
+$primary-title: 'Crimson Text', serif;
+$sub-heading: 'Lato', sans-serif;
+$main-colour: #222222;
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 290px;
+  border-color: #e5e5e5;
+  border-width: 1px;
+  border-style: solid;
+  margin: 20px; 
 }
 
-export default consulting;
+.title {
+  font-family: $primary-title;
+  margin: 10px;
+
+}
+
+.time {
+  font-family: $sub-heading;
+  line-height: 0;
+  color: #707070;
+}
+
+.cost {
+  font-family: $sub-heading;
+  line-height: 0;
+  color: #707070;
+}
+
+.button {
+  background-color: #adc743;
+  font-family: $sub-heading;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s all;
+  width: 160px;
+  height: 46px;
+  align-self: center;
+  margin: 30px;
+
+}
+
+.button:hover {
+  background-color: #899c40;
+}
