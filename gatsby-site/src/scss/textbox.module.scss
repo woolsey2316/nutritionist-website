@@ -119,3 +119,10 @@ $sub-heading: 'Lato', sans-serif;
     margin-right: 281px;
 
 }
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;    
+    width: 634px;
+}

@@ -21,33 +21,35 @@ class ContactForm extends React.Component {
      <div className={Style.formContainer}>
      <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
       <div className={Style.formGroup}>
-          <label className={Style.label} htmlFor="name">Name</label>
           <input 
             type="text" 
             className={Style.input} 
             value={this.state.name}
+            placeholder="Name"
             onChange={this.onNameChange.bind(this)} />
       </div>
       <div className={Style.formGroup}>
-          <label className={Style.label} htmlFor="exampleInputEmail1">Email address</label>
           <input 
             type="email" 
             className={Style.input} 
             aria-describedby="emailHelp" 
             value={this.state.email} 
+            placeholder="Email"
             onChange={this.onEmailChange.bind(this)} />
       </div>
       <div className={Style.formGroup}>
-          <label className={Style.label} htmlFor="message">Message</label>
           <textarea 
             className={Style.input} 
             rows="7" 
             value={this.state.message} 
             onChange={this.onMessageChange.bind(this)}
-            resize="none"/>
+            placeholder="Message"
+            style={{resize:'none'}}/>
       </div>
-      <button type="submit" className={Style.button}>Submit</button>
-      <p className={Style.subtext}>Thanks for submitting!</p>
+      <div className={Style.miniContainer}>
+        <button type="submit" className={Style.button}>Submit</button>
+        <p className={Style.subtext}>Thanks for submitting!</p>
+      </div>
       </form>
       </div>
    );
