@@ -12,7 +12,7 @@ const Plans = () => {
         <picture>
           <Header title="Choose Your Pricing Plan"/>
         </picture>
-        <div className={Style.mainConatiner}>
+        <div className={Style.mainContainer}>
           <Plan 
             planName="21 Day Cleanse" 
             cost="50" 
