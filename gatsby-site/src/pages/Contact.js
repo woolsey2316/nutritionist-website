@@ -18,7 +18,7 @@ const Contact = () =>  {
               <p className={Style.alisonDescription}>If you need more information, have questions, or would like to 
               offer a suggestion, please be in touch. 
               You can contact me via phone, email or by filling out the form.</p>
-              <p className={Style.alisonDescription}>
+              <p className={Style.fancyText}>
               <br/>
               I’ll get back to you as soon as possible. </p>
               <br/>

@@ -106,6 +106,12 @@ $sub-heading: 'Lato', sans-serif;
     color: black;
 }
 
+.fancyText {
+    @extend .blogTitle;
+    color: black;
+    font-size: 22px;
+}
+
 .blogDescription {
     @extend .description;
     color: white;

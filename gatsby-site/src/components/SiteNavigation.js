@@ -11,7 +11,6 @@ const SiteNavigation = () => (
     </div>
     <NavLink name="Home"/>
     <NavLink name="About Alison"/>
-    <NavLink name="Blog"/>
     <NavLink name="Contact"/>
     <NavLink name="Plans"/>
     <NavLink name="Services"/>
