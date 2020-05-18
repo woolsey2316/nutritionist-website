@@ -1,34 +1,20 @@
-import React from 'react';
-import Footer from '../components/footer'
+import React from 'react'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 import SiteNavigation from '../components/SiteNavigation'
-import Plan from '../components/Plan'
-import Style from '../scss/plan.module.scss'
+import PlansContainer from '../containers/PlansContainer'
 
 const Plans = () => {
-    return (
-      <div>
-      <SiteNavigation/>
-        <picture>
-          <Header title="Choose Your Pricing Plan"/>
-        </picture>
-        <div className={Style.mainContainer}>
-          <Plan 
-            planName="21 Day Cleanse" 
-            cost="50" 
-            description="A great way to cleanse your body and feel good"/>
-          <Plan 
-            planName="5 Week Plan" 
-            cost="125" 
-            description="A plan that will help you consume all the nutrients that you"/>
-          <Plan 
-            planName="10 Week Plan"  
-            cost="225" 
-            description="A structured plan to help you achieve your weight loss goals"/>
-        </div>
-        <Footer/>
-      </div>
-    )
+  return (
+    <div>
+      <SiteNavigation />
+      <picture>
+        <Header title="Choose Your Pricing Plan" />
+      </picture>
+      <PlansContainer/>
+      <Footer />
+    </div>
+  )
 }
 
-export default Plans;
+export default Plans

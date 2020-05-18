@@ -1,0 +1,15 @@
+[
+    {"id": 1, "img": "juice.png","title": "Personal Nutrition Counselling", "price": 100, "inventory": 50, "time": 1},
+    {"id": 2, "img": "kids.png","title": "Family Nutrition Counselling", "price": 100, "inventory": 50, "time": 1.5},
+    {"id": 3, "img": "tomato.png","title": "Sustainable Weight Management", "price": 70, "inventory": 50, "time": 1.5},
+    {"id": 4, "img": "glutenfree.png","title": "Food Sensitivities", "price": 80, "inventory": 50, "time": 1},
+    {"id": 5, "img": "alison3.png","title": "Initial Nutrition Assessment", "price": 200, "inventory": 50, "time": 1},
+    {"id": 6, "img": "breakfast.png","title": "Improving LifeStyle Workshop", "price": 50, "inventory": 50, "time": 1.5},
+    {"id": 7, "img": "cooking.png","title": "Healthy Cooking Classes", "price": 90, "inventory": 50, "time": 1},
+    {"id": 8, "img": "juices.png","title": "Changing Habits", "price": 90, "inventory": 50, "time": 1},
+    {"id": 9, "img": "fruit-collection.png","title": "Grocery Tours", "price": 100, "inventory": 50, "time": 1},
+    {"id": 10, "img": "cooking.png","title": "21 Day Cleanse", "price": 50, "inventory": 50, "time": 1,"description": "A great way to cleanse your body and feel good"},
+    {"id": 11, "img": "juices.png","title": "5 Week Plan", "price": 125, "inventory": 50, "time": 1,"description": "A plan that will help you consume all the nutrients that you"},
+    {"id": 12, "img": "fruit-collection.png","title": "10 Week Plan", "price": 225, "inventory": 50, "time": 1,"description": "A structured plan to help you achieve your weight loss goals"}
+  ]
+

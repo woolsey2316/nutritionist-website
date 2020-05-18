@@ -13,7 +13,6 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-
 export default () => {
   const data = useStaticQuery(graphql`
     query {
@@ -29,12 +28,10 @@ export default () => {
     }
   `)
   return (
-    <div>
       <Img
         fixed={data.file.childImageSharp.fixed}
         alt="Salad Dish"
-        style={{marginRight:'600px',float: 'right'}}
+        style={{ marginLeft: "12%", display: "relative"}}
       />
-    </div>
   )
 }

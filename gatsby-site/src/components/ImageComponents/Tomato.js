@@ -13,11 +13,10 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "tomato.png" }) {
+      alias:file(relativePath: { eq: "tomato.png" }) {
         childImageSharp {
           # Specify a fixed image and fragment.
           # The default width is 400 pixels
@@ -30,10 +29,7 @@ export default () => {
   `)
   return (
     <div>
-      <Img
-        fixed={data.file.childImageSharp.fixed}
-        alt="fruit Dish"
-      />
+      <Img fixed={data.alias.childImageSharp.fixed} alt="fruit Dish" />
     </div>
   )
 }

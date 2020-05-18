@@ -5,37 +5,88 @@ $font-stack: Helvetica, sans-serif;
 $primary-title: 'Crimson Text', serif;
 $sub-heading: 'Lato', sans-serif;
 
+// Breakpoints
+$bp-small: 48em; // 768px
+$bp-medium: 64em; // 1024px
+$bp-large: 85.375em; // 1366px
+$bp-xlarge: 120em; // 1920px
+$bp-xxlarge: 160em; // 2560px
+
+// Media Queries
+$mq-small: "(min-width: #{$bp-small})";
+$mq-medium: "(min-width: #{$bp-medium})";
+$mq-large: "(min-width: #{$bp-large})";
+$mq-xlarge: "(min-width: #{$bp-xlarge})";
+$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
+$mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+
+// Font-Size
+$base-font-size-small: 1em;
+$base-font-size-large: 2em;
+$base-line-height: 1.5;
+$header-line-height: 1.25;
+
 .flexItemOne{
-  margin: 0% 10%;
-  flex-basis: .33vw;
   min-width: 200px;
+  //text-align: center;
 }
 
 .flexItemTwo{
-  margin: 0% 10%;
-  flex-basis: .33vw;
   min-width: 250px;
   text-align: center;
-  margin-bottom: 35px;
 }
 
 .description {
-  line-height: 1.5;
+  line-height: 1;
   font-family: $sub-heading;
-  font-size: 18px;
-  margin: 0% 5%;
-  flex-basis: .33vw;
+  font-size: $base-font-size-small;
   color:white;
   min-width: 200px;
+  margin: 0.3em;
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size-small*1.4;
+    
+  }
+  @media #{$mq-large} {
+      font-size: $base-font-size-small*1.6;
+  }
+
+  @media #{$mq-xlarge} {
+      font-size: $base-font-size-small*1.8;
+  }
+
+  @media #{$mq-xxlarge} {
+      font-size: $base-font-size-small*2.0;
+  }
 }
 
 .title {
   line-height: 1.5;
-  font-size: 30px;
+  font-size: $base-font-size-large;
   font-family: $primary-title;
-  flex-basis: .33vw;
   color:white;
   min-width: 250px;
+  margin: 0;
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size-large*1.5;
+    line-height: $base-line-height*1.2;
+  }
+  @media #{$mq-large} {
+      font-size: $base-font-size-large*1.7;
+
+  }
+
+  @media #{$mq-xlarge} {
+      font-size: $base-font-size-large*1.9;
+
+  }
+
+  @media #{$mq-xxlarge} {
+      font-size: $base-font-size-large*2.2;
+
+  }
   
 }
 
@@ -45,10 +96,9 @@ $sub-heading: 'Lato', sans-serif;
 
 .line {
   border-left: 1px solid white;
-  height: 120px;
+  height: 12em;
 }
 
 .break {
-  flex-basis: 100%;
   height: 0;
 }

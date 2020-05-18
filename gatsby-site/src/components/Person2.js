@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import style from "../scss/textbox.module.scss";
+import style from "../scss/textbox.module.scss"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -13,7 +13,6 @@ import style from "../scss/textbox.module.scss";
  * - `gatsby-image`: https://gatsby.dev/gatsby-image
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
-
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -34,10 +33,10 @@ export default () => {
       <Img
         fixed={data.file.childImageSharp.fixed}
         alt="Gatsby Docs are awesome"
-        height= "332px"
+        height="332px"
         width="450px"
         float="right"
-        style={{display:'block'}}
+        style={{ display: "block" }}
       />
       <div className={style.specialties}>
         <h4>Specialties</h4>
