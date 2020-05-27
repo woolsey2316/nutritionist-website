@@ -11,31 +11,30 @@ export class ServicesContainer extends Component {
     super(props)
     this.state = {
       consulting: true,
-      lessons: false,
     }
     this.showConsulting = this.showConsulting.bind(this)
-    this.showLessons = this.showLessons.bind(this)
   }
-  showConsulting() {
-    this.setState({ consulting: true, lessons: false })
+  showConsulting(truthy) {
+    this.setState({ consulting: truthy })
   }
-  showLessons() {
-    this.setState({ consulting: false, lessons: true })
+  componentDidMount() {
+    this.showConsulting(true);
   }
+
   render() {
     return (
       <div className={Style.mainContainer}>
         <button
-          className={Style.button}
+          className={this.state.consulting ? Style.button__underlined : Style.button}
           type="button"
-          onClick={this.showConsulting}
+          onClick={() => this.showConsulting(true)}
         >
           Consulting
         </button>
         <button
-          className={Style.button}
+          className={!this.state.consulting ? Style.button__underlined : Style.button}
           type="button"
-          onClick={this.showLessons}
+          onClick={() => this.showConsulting(false)}
         >
           Lessons
         </button>
@@ -54,7 +53,7 @@ export class ServicesContainer extends Component {
           )
         }
         {
-          this.state.lessons && 
+          !this.state.consulting && 
           this.props.products.filter(product =>  product.id >= 7 && product.id < 10).map(product => {
               return(
                 <Lesson

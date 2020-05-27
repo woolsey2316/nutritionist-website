@@ -3,7 +3,7 @@ import { graphql, StaticQuery } from "gatsby"
 
 import BackgroundImage from "gatsby-background-image"
 import Style from "../scss/landing-page.module.scss"
-import buttonStyle from "../scss/button.module.scss"
+import buttonStyle from "../scss/components/button.module.scss"
 
 const LandingPage = ({ className }) => (
   <StaticQuery

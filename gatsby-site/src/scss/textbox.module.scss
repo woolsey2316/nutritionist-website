@@ -1,22 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Lato&display=swap');
+@import 'variables/assets';
 
 $primary-title: 'Crimson Text', serif;
 $sub-heading: 'Lato', sans-serif;
-
-// Breakpoints
-$bp-small: 48em; // 768px
-$bp-medium: 64em; // 1024px
-$bp-large: 85.375em; // 1366px
-$bp-xlarge: 120em; // 1920px
-$bp-xxlarge: 160em; // 2560px
-
-// Media Queries
-$mq-small: "(min-width: #{$bp-small})";
-$mq-medium: "(min-width: #{$bp-medium})";
-$mq-large: "(min-width: #{$bp-large})";
-$mq-xlarge: "(min-width: #{$bp-xlarge})";
-$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
-$mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 
 $base-height: 5em;
 $base-width: 12em;
@@ -88,9 +73,13 @@ $base-font-size-small: 1em;
 }
 
 .textBox {
-    display: flex;
+    display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
     flex-direction: column;
-    justify-content: center;
+    -webkit-justify-content:  center;
+    -moz-justify-content:  center;
+    justify-content:  center;
     font-family: $sub-heading;
     color: #555353;
     
@@ -144,14 +133,6 @@ $base-font-size-small: 1em;
     background-color: #e8ebee;
     height: 425px;
     width: 50%;
-}
-
-.contactTextBox {
-    @extend .textBox;
-    background-color: #e8ebee;
-    height: 379px;
-    width: 634px;
-
 }
 
 .storyTextBox {
@@ -216,16 +197,12 @@ $base-font-size-small: 1em;
 }
 
 .mainContainer {
-    display: flex;
+    display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     float: right;
     margin-right: 281px;
 
-}
-
-.contactContainer {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-end;    
-    width: 634px;
 }

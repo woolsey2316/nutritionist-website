@@ -3,7 +3,7 @@ import Footer from "../components/Footer"
 import Person2 from "../components/Person2"
 import SiteNavigation from "../components/SiteNavigation"
 import Header from "../components/Header"
-import style from "../scss/textbox.module.scss"
+import style from "../scss/AboutAlison.module.scss"
 
 const AboutAllison = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Product from './Product'
-import Style from '../../scss/button.module.scss'
+import Style from '../../scss/components/button.module.scss'
 import productStyle from '../../scss/product.module.scss'
 
 const Cart  = ({ products, total, onCheckoutClicked }) => {

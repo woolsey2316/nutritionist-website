@@ -12,6 +12,11 @@ const CartContainer = ({ products, total, checkout }) => (
     onCheckoutClicked={() => checkout(products)} />
 )
 
+const mapStateToProps = (state) => ({
+  products: getCartProducts(state),
+  total: getTotal(state)
+})
+
 CartContainer.propTypes = {
   products: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number.isRequired,
@@ -22,11 +27,6 @@ CartContainer.propTypes = {
   total: PropTypes.string,
   checkout: PropTypes.func.isRequired
 }
-
-const mapStateToProps = (state) => ({
-  products: getCartProducts(state),
-  total: getTotal(state)
-})
 
 export default connect(
   mapStateToProps,

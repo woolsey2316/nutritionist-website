@@ -52,13 +52,12 @@ const Footer = ({ className }) => (
           <div className={Style.line} />
           <div className={Style.flexItemTwo}>
             <p className={Style.title}>ALISON KNIGHT</p>
-            <p className={Style.description}>Nutritionist</p>
+            <p className={Style.subheading}>Nutritionist</p>
           </div>
           <div className={Style.line} />
-          <div>
-          <p className={Style.description}>Tel: 123-456-7890</p>
-          
-          <SocialMediaQuilt colour="white" />
+          <div className={Style.flexItemThree}>
+            <p className={Style.description}>Tel: 123-456-7890</p>
+            <SocialMediaQuilt colour="white" />
           </div>
         </BackgroundImage>
       )

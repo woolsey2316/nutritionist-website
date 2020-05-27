@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import style from "../scss/textbox.module.scss"
+import style from "../scss/AboutAlison.module.scss"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -39,12 +39,12 @@ export default () => {
         style={{ display: "block" }}
       />
       <div className={style.specialties}>
-        <h4>Specialties</h4>
-        <p>Digestive Wellness</p>
-        <p>Food allergies and Intolerance</p>
-        <p>Healthy cooking / meal planning</p>
-        <p>Diet and Detoxing</p>
-        <p>Elimination diets</p>
+        <h3 className={style.heading} >Specialties</h3>
+        <p className={style.text}>Digestive Wellness</p>
+        <p className={style.text}>Food allergies and Intolerance</p>
+        <p className={style.text}>Healthy cooking / meal planning</p>
+        <p className={style.text}>Diet and Detoxing</p>
+        <p className={style.text}>Elimination diets</p>
       </div>
     </div>
   )

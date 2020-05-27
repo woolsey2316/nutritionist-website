@@ -10,22 +10,22 @@ export default props => {
     <ul className={Style.ul}>
       <li>
         <a href="https://www.facebook.com" style={{ color: props.colour }}>
-          <FontAwesomeIcon className="fa-2x" icon={["fab", "facebook-f"]} />
+          <FontAwesomeIcon className={Style.icon} icon={["fab", "facebook-f"]} />
         </a>
       </li>
       <li>
         <a href="https://www.twitter.com" style={{ color: props.colour }}>
-          <FontAwesomeIcon className="fa-2x" icon={["fab", "twitter"]} />
+          <FontAwesomeIcon className={Style.icon} icon={["fab", "twitter"]} />
         </a>
       </li>
       <li>
         <a href="https://www.instagram.com" style={{ color: props.colour }}>
-          <FontAwesomeIcon className="fa-2x" icon={["fab", "instagram"]} />
+          <FontAwesomeIcon className={Style.icon} icon={["fab", "instagram"]} />
         </a>
       </li>
       <li>
         <a href="https://www.pinterest.com" style={{ color: props.colour }}>
-          <FontAwesomeIcon className="fa-2x" icon={["fab", "pinterest-p"]} />
+          <FontAwesomeIcon className={Style.icon} icon={["fab", "pinterest-p"]} />
         </a>
       </li>
     </ul>

@@ -12,7 +12,7 @@ import BlogTextBox from '../components/BlogTextBox'
 import ServicesTextBox from '../components/BlogTextBox'
 import WebsiteStyle from '../scss/website.module.scss'
 import style from '../scss/person.module.scss'
-import buttonStyle from '../scss/button.module.scss'
+import buttonStyle from '../scss/components/button.module.scss'
 
 export default () => {
   return (

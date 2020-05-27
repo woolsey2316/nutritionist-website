@@ -1,23 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Lato&display=swap');
+
+@import 'variables/assets';
 
 $primary-title: 'Crimson Text', serif;
 $sub-heading: 'Lato', sans-serif;
 $main-colour: #222222;
-
-// Breakpoints
-$bp-small: 48em; // 768px
-$bp-medium: 64em; // 1024px
-$bp-large: 85.375em; // 1366px
-$bp-xlarge: 120em; // 1920px
-$bp-xxlarge: 160em; // 2560px
-
-// Media Queries
-$mq-small: "(min-width: #{$bp-small})";
-$mq-medium: "(min-width: #{$bp-medium})";
-$mq-large: "(min-width: #{$bp-large})";
-$mq-xlarge: "(min-width: #{$bp-xlarge})";
-$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
-$mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 
 // Font-Size
 $base-font-size-small: 1em;
@@ -27,9 +13,14 @@ $base-line-height: 1.5;
 $header-line-height: 1.25;
 
 .mainContainer {
-  display: flex;
-  justify-content: center;
+  display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+  -webkit-justify-content:  center;
+  -moz-justify-content:  center;
+  justify-content:  center;
   text-align: center;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -85,8 +76,9 @@ $header-line-height: 1.25;
   border-bottom-style: solid;
   border-bottom-width: 3px;
 }
-.button:focus {
-  outline: none;
+
+.button__underlined {
+  @extend .button;
   border-width: 0px;
   border-bottom-color: #adc743;
   border-bottom-style: solid;

@@ -3,7 +3,7 @@ import ContactForm from "../components/ContactForm"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import SiteNavigation from "../components/SiteNavigation"
-import Style from "../scss/textbox.module.scss"
+import Style from "../scss/Contact.module.scss"
 import style from "../scss/contact-form.module.scss"
 import GoogleMap from "../components/GoogleMap"
 

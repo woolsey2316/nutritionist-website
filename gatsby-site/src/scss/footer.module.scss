@@ -1,40 +1,32 @@
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Lato&display=swap');
+@import 'variables/assets';
 
 $opaque-white: #ffffffc5;
 $font-stack: Helvetica, sans-serif;
 $primary-title: 'Crimson Text', serif;
 $sub-heading: 'Lato', sans-serif;
 
-// Breakpoints
-$bp-small: 48em; // 768px
-$bp-medium: 64em; // 1024px
-$bp-large: 85.375em; // 1366px
-$bp-xlarge: 120em; // 1920px
-$bp-xxlarge: 160em; // 2560px
-
-// Media Queries
-$mq-small: "(min-width: #{$bp-small})";
-$mq-medium: "(min-width: #{$bp-medium})";
-$mq-large: "(min-width: #{$bp-large})";
-$mq-xlarge: "(min-width: #{$bp-xlarge})";
-$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
-$mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
-
 // Font-Size
-$base-font-size-small: 1em;
-$base-font-size-large: 2em;
-$base-line-height: 1.5;
-$header-line-height: 1.25;
+$base-font-size-small: 0.6em;
+$base-font-size-medium: 0.75em;
+$base-font-size-large: 1.7em;
+$base-line-height: 1.4;
 
 .flexItemOne{
   min-width: 200px;
+  margin-bottom: -2.5em;
   //text-align: center;
 }
 
 .flexItemTwo{
   min-width: 250px;
   text-align: center;
+  margin-bottom: 3.2em;
 }
+
+.flexItemThree{
+  margin-bottom: -2.3em;
+}
+
 
 .description {
   line-height: 1;
@@ -61,8 +53,33 @@ $header-line-height: 1.25;
   }
 }
 
+.subheading {
+  line-height: 1;
+  font-family: $sub-heading;
+  font-size: $base-font-size-medium;
+  color:white;
+  min-width: 200px;
+  margin: 0.3em;
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size-medium*1.4;
+    
+  }
+  @media #{$mq-large} {
+      font-size: $base-font-size-medium*1.6;
+  }
+
+  @media #{$mq-xlarge} {
+      font-size: $base-font-size-medium*1.8;
+  }
+
+  @media #{$mq-xxlarge} {
+      font-size: $base-font-size-medium*2.0;
+  }
+}
+
 .title {
-  line-height: 1.5;
+  line-height: $base-line-height;
   font-size: $base-font-size-large;
   font-family: $primary-title;
   color:white;
@@ -95,7 +112,7 @@ $header-line-height: 1.25;
 }
 
 .line {
-  border-left: 1px solid white;
+  border-left: 0.13em solid white;
   height: 12em;
 }
 

@@ -31,7 +31,7 @@ export default () => {
       <Img
         fixed={data.file.childImageSharp.fixed}
         alt="fruit Dish"
-        style={{marginLeft:"30%", display:"block"}}
+        style={{marginLeft:"20%", display:"block"}}
         
       />
   )
