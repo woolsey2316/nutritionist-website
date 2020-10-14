@@ -15,6 +15,7 @@ $main-colour: #222222;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+
 .priceContainer {
   display: -webkit-box;
 	display: -ms-flexbox;
@@ -24,6 +25,7 @@ $main-colour: #222222;
   justify-content:  center;
   text-align: center;
 }
+
 .planContainer {
   max-width: 320px;
   display: -webkit-box;
@@ -41,6 +43,7 @@ $main-colour: #222222;
   border-width: 1px;
   margin: 20px 10px;
 }
+
 .benefitContainer {
   min-height: 200px;
   display: -webkit-box;
@@ -58,6 +61,7 @@ $main-colour: #222222;
   border-width: 1px;
   margin: 20px 10px;
 }
+
 .heading {
   font-family: $sub-heading;
   font-size: 27px;
@@ -78,6 +82,7 @@ $main-colour: #222222;
   margin-top: 50px;
 
 }
+
 .subtext {
   color: #8c8c8c;
   font-size: 13px;

@@ -6,9 +6,6 @@ import { addToCart } from '../actions'
 import Plan from '../components/Plan'
 
 class PlansContainer extends Component {
-  constructor(props) {
-    super(props)
-  }
   render() {
     return (
       <div className={Style.mainContainer}>
@@ -30,10 +27,6 @@ class PlansContainer extends Component {
 
   const mapStateToProps = state => ({
     products: getVisibleProducts(state.products)
-  })
-
-  const mapDispatchToProps = dispatch => ({
-    addToCart: id => dispatch(addToCart(id))
   })
 
   export default connect(

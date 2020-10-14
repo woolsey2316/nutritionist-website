@@ -5,11 +5,17 @@
 .mainContainer {
   display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex;
+  display: flex;
+  justify-content: flex-end;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   float: right;
-  margin-right: 14%;
+  margin-right: 6%;
+
+  @media #{$mq-large} {
+    margin-right: 14%;
+  
+  }
 
 }
 
@@ -32,7 +38,7 @@
 .storyTextBox {
   @extend .textBox;
   background-color: #e8ebee;
-  width: 530px;
+  width: 45%;
 
 }
 
@@ -83,10 +89,6 @@
   white-space: normal;
   margin: 0% 10% 10% 10%;
 
-  @media #{$mq-medium} {
-    font-size: $font-16px*1.2;
-  
-  }
   @media #{$mq-large} {
     font-size: $font-16px*1.3;
       

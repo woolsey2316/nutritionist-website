@@ -1,5 +1,3 @@
-
-
 $opaque-white: #ffffffc5;
 $font-stack: Helvetica, sans-serif;
 $primary-title: 'Crimson Text', serif;
@@ -20,8 +18,8 @@ $base-font-size-small: .6em;
 
 .quoteBox {
   display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
+  display: -ms-flexbox;
+  display: flex;
   flex-direction: column;
   -webkit-justify-content:  space-evenly;
   -moz-justify-content:  space-evenly;
@@ -30,7 +28,7 @@ display: flex;
   align-items: center;
   margin-left: 10%;
   background-color: $opaque-white;
-  width: $base-width;
+  width: $base-width*2;
   height: 100%;
 
   @media #{$mq-medium} {
