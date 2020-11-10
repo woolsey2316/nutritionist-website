@@ -36,7 +36,5 @@ export const checkout = products => (dispatch, getState) => {
       type: types.CHECKOUT_SUCCESS,
       cart
     })
-    // Replace the line above with line below to rollback on failure:
-    // dispatch({ type: types.CHECKOUT_FAILURE, cart })
   })
 }
